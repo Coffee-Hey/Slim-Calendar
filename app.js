@@ -9,7 +9,7 @@ demo.addEventListener('click', () => {
 const previews = {
  schedule: {src:'assets/ios-schedule.webp',alt:'App Store 预览：日程与待办融合展示',caption:'日程与待办，一屏全掌控。'},
  month: {src:'assets/ios-month.webp',alt:'App Store 预览：完整月历与彩色事项',caption:'从整月概览，找到生活的节奏。'},
- widgets: {src:'assets/ios-widgets.webp',alt:'App Store 预览：深色今日、周历和月历小组件',caption:'让今天的安排，留在主屏幕。'}
+ widgets: {src:'assets/ios-widgets-popup.webp',alt:'桌面小组件与月历交互弹窗',caption:'桌面点一下，弹窗直接看。'}
 };
 const tabs = [...document.querySelectorAll('[data-preview]')];
 function selectPreview(tab) {

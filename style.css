@@ -7,3 +7,5 @@
 /* Readable supporting copy and comfortable touch targets. */
 .faq-items p,.installation p,.clean-list span{font-size:16px}.theme-switch button{min-height:44px}.nav-links a{min-height:44px;display:flex;align-items:center}
 @media(max-width:800px){html{scroll-padding-top:150px}}
+
+.support-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;border-top:1px solid var(--line);align-items:center}.support-contact>p{font-size:16px;color:var(--muted)}.support-email{display:inline-block;font-size:24px;color:var(--teal);margin-top:15px;overflow-wrap:anywhere;border-bottom:1px solid #81a99b}.support-contact .support-hint{font-size:13px;margin-top:12px}@media(max-width:800px){.support-section{grid-template-columns:1fr;gap:25px}.support-email{font-size:20px}footer>div{overflow-wrap:anywhere;max-width:100%}}
