@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 / Privacy Policy · Slim Calendar</title>
+  <meta name="description" content="Slim Calendar Privacy Policy - A privacy-focused, zero-tracking, local-first calendar app for iOS.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📅</text></svg>">
+  <link rel="canonical" href="https://coffee-hey.github.io/Slim-Calendar/privacy.html">
+  <style>
+    :root {
+      --bg-color: #f5f5f7;
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --card-border: rgba(0, 0, 0, 0.08);
+      --text-primary: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --accent-color: #0071e3;
+      --tag-bg: rgba(0, 113, 227, 0.1);
+      --tag-color: #0071e3;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      --badge-green: #34c759;
+      --badge-green-bg: rgba(52, 199, 89, 0.12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #000000;
+        --card-bg: rgba(28, 28, 30, 0.85);
+        --card-border: rgba(255, 255, 255, 0.12);
+        --text-primary: #f5f5f7;
+        --text-secondary: #86868b;
+        --accent-color: #2997ff;
+        --tag-bg: rgba(41, 151, 255, 0.15);
+        --tag-color: #2997ff;
+        --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        --badge-green: #30d158;
+        --badge-green-bg: rgba(48, 209, 88, 0.18);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--tag-bg);
+      color: var(--tag-color);
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .lang-switcher {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      display: flex;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 3px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .lang-btn {
+      border: none;
+      background: none;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--accent-color);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    /* Highlights Banner */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .highlight-icon {
+      font-size: 26px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .highlight-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .highlight-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    /* Policy Card */
+    .policy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .pill-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      background: var(--badge-green-bg);
+      color: var(--badge-green);
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Language display */
+    .content-en {
+      display: none;
+    }
+
+    :root { --bg-color:#ffffff; --card-bg:#ffffff; --text-primary:#163330; --text-secondary:#5d706d; --accent-color:#087d78; --tag-bg:#edf5f1; --tag-color:#087d78; --card-border:#dfe8e4; --shadow:none; --badge-green:#087d78; --badge-green-bg:#edf5f1; color-scheme:light; }
+    body { padding:28px 24px 64px; }
+    .policy-navigation { max-width:960px; margin:0 auto 42px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:18px; }
+    .back-home { font-size:16px; font-weight:600; color:var(--accent-color); text-decoration:none; }
+    .lang-switcher { position:static; box-shadow:none; }
+    .lang-btn { min-height:44px; font-size:14px; }
+    p,ul { font-size:16px; line-height:1.85; }
+    .policy-card { padding:32px; }
+    .section { scroll-margin-top:24px; }
+    li { overflow-wrap:anywhere; }
+    code { overflow-wrap:anywhere; }
+    a { color:var(--accent-color); }
+    a:focus-visible,button:focus-visible { outline:3px solid var(--accent-color); outline-offset:4px; }
+    @media(max-width:560px) { body{padding:20px 18px 40px} .policy-navigation{margin-bottom:28px} .policy-card{padding:24px 20px} h1{font-size:28px} h2{font-size:20px} .highlights-grid{grid-template-columns:1fr} }
+    @media(prefers-reduced-motion:reduce) { *{transition:none!important} }
+
+  </style>
+</head>
+<body>
+
+  <nav class="policy-navigation" aria-label="隐私政策导航"><a class="back-home" href="index.html">返回 Slim Calendar</a>
+  <div class="lang-switcher" role="group" aria-label="Language / 语言">
+    <button class="lang-btn active" id="btn-zh" onclick="setLang('zh')">简体中文</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  </nav>
+  <main class="container">
+    
+    <!-- Header -->
+    <header>
+      <div class="app-badge">
+        <span>🛡️</span>
+        <span class="content-zh">隐私至上 · 本地优先</span>
+        <span class="content-en">Privacy First · Local Only</span>
+      </div>
+      <h1 class="content-zh">Slim Calendar 隐私政策</h1>
+      <h1 class="content-en">Slim Calendar Privacy Policy</h1>
+      <p class="meta content-zh">最近更新日期：2026 年 11 月 25 日 | 生效日期：2026 年 11 月 25 日</p>
+      <p class="meta content-en">Last Updated: November 25, 2026 | Effective Date: November 25, 2026</p>
+    </header>
+
+    <!-- Highlights Banner -->
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <span class="highlight-icon">🔒</span>
+        <div class="highlight-title content-zh">本地优先与零中转</div>
+        <div class="highlight-title content-en">Local-First & Zero Relay</div>
+        <div class="highlight-desc content-zh">应用不运营开发者服务器；系统日程与待办保存于本机，Google 同步由设备直连官方 API。</div>
+        <div class="highlight-desc content-en">No developer-operated backend. System items stay on-device; optional Google sync connects directly to official APIs.</div>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-icon">🚫</span>
+        <div class="highlight-title content-zh">无广告 · 零追踪</div>
+        <div class="highlight-title content-en">Zero Ads · Zero Tracking</div>
+        <div class="highlight-desc content-zh">绝不包含第三方广告 SDK、用户画像或行为追踪代码，保持纯粹极简。</div>
+        <div class="highlight-desc content-en">Contains no advertising SDKs, analytics frameworks, or behavioral tracking code.</div>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-icon">☁️</span>
+        <div class="highlight-title content-zh">多账户直连同步</div>
+        <div class="highlight-title content-en">Direct Account Sync</div>
+        <div class="highlight-desc content-zh">支持 iCloud 等系统账户及多 Google 账号直连，凭证仅存于本机钥匙串，严格遵循 Limited Use 政策。</div>
+        <div class="highlight-desc content-en">Supports system accounts (iCloud/CalDAV) and multi-account Google direct sync with Keychain-only tokens and Limited Use compliance.</div>
+      </div>
+    </div>
+
+    <!-- Main Content Card -->
+    <div class="policy-card">
+      
+      <!-- CHINESE CONTENT -->
+      <div class="content-zh">
+        <div class="section">
+          <h2>1. 前言与隐私承诺</h2>
+          <p>Slim Calendar（以下简称“我们”或“本应用”）非常重视用户的个人隐私与数据安全。本隐私政策旨在明确向您告知我们如何处理与您相关的信息。我们的核心设计原则是：<strong>用户的日程数据属于用户自己。本应用不运营用于收集、中转或分析您个人日程数据的开发者服务器。</strong></p>
+        </div>
+
+        <div class="section">
+          <h2>2. 数据收集与权限使用说明 <span class="pill-badge">零服务器收集</span></h2>
+          <p>本应用在运行期间可能请求访问以下 iOS 系统权限，且所有权限仅在设备本地生效：</p>
+          <ul>
+            <li><strong>日历权限（NSCalendarsFullAccessUsageDescription）</strong>：用于读取您在系统日历中已有的日程并在应用及桌面小组件中清晰展示，同时支持您在主动操作时创建、修改或删除日程。</li>
+            <li><strong>提醒事项权限（NSRemindersFullAccessUsageDescription）</strong>：用于读取并显示您的待办事项清单，并在您勾选完成或新建待办时同步写回系统提醒事项。</li>
+            <li><strong>通知权限</strong>：经您允许后，用于在设备上安排日程与待办的本地通知，不使用远程推送服务。通知开关、提示音可在「设置 → 通知与权限」中调整，也可在系统设置中撤销授权。</li>
+            <li><strong>系统联系人选择器（仅单次挑选）</strong>：仅当您在“忙闲共享权限”中主动点击从通讯录挑选受邀邮箱时，通过系统级 <code>CNContactPickerViewController</code> 由您点选单条联系人邮箱；应用不申请通讯录完整读取权限，也不会上传或存储您的通讯录。</li>
+          </ul>
+          <p>您随时可以在应用内「设置 → 日历账户 / 通知与权限」中关闭系统日历、系统提醒事项、通知或网络连接开关，也可在 iOS 设备的“设置 → App → Slim Calendar”中撤销任何权限。权限关闭后，应用仍保证离线基础浏览可用。</p>
+        </div>
+
+        <div class="section">
+          <h2>3. 本地存储、App Group 与 iCloud 同步</h2>
+          <p>为了让桌面小组件（Widget）能够实时显示您选中的日期和日程条目，本应用使用了 iOS 系统的 App Group（共享群组）沙盒技术。共享文件及按 Google 账号独立隔离的本地缓存仅供主应用与小组件在设备本地使用，不会上传至开发者服务器。此外，当您的设备登录 iCloud 时，应用可通过 Apple 私有 iCloud 键值存储（<code>NSUbiquitousKeyValueStore</code>）同步已归档/完成日程的不透明标识键（不包含任何日程标题、地点或备注），该数据由 Apple 按 iCloud 隐私条款管理。</p>
+        </div>
+
+        <div class="section">
+          <h2>4. 第三方 SDK 与网络请求说明</h2>
+          <p>我们郑重承诺：</p>
+          <ul>
+            <li>本应用<strong>不包含任何第三方广告 SDK</strong>；</li>
+            <li>本应用<strong>不包含任何统计分析、崩溃回传或用户行为追踪 SDK</strong>；</li>
+            <li>本应用<strong>不出售或出租您的个人日程数据</strong>，也不将其上传到开发者服务器用于分析。</li>
+          </ul>
+          <p>在以下您主动触发或开启网络权限的场景中，应用会发出直连网络请求：</p>
+          <ul>
+            <li><strong>订阅日历查询</strong>：当您主动查询订阅日历时，应用通过 HTTPS 临时会话（不保存 Cookie 或响应缓存）连接您输入的网址；提供方可能收到您的 IP 地址与请求链接，请求不包含您的本地事件或待办内容。</li>
+            <li><strong>地点搜索与参与者联系</strong>：当您主动搜索地点时，搜索文字交由 Apple MapKit 处理（不申请设备定位权限）。您输入的参与者联系方式仅保存在本机，仅在您点击邮件或电话时交由系统应用处理。</li>
+            <li><strong>法定节假日与调休数据更新</strong>：在开启“网络连接”开关时，应用会匿名从开源项目 <code>NateScarlet/holiday-cn</code>（GitHub / jsDelivr）拉取年度法定节假日与调休日期表，请求不携带任何个人身份或日程信息。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5. Google Calendar 与 Google Drive API 直连同步说明 <span class="pill-badge">直连官方 API · 零中转</span></h2>
+          <p>如果您选择在「设置 → 日历账户 → 添加 Google 账户」中连接一个或多个 Google 账号，应用仅通过 Apple 系统安全浏览器会话（<code>ASWebAuthenticationSession</code>，OAuth 2.0 + PKCE）直接在您的设备与 Google 官方端点（<code>accounts.google.com</code>、<code>oauth2.googleapis.com</code>、<code>www.googleapis.com</code>）之间通信，不经过任何开发者服务器或第三方中转：</p>
+          <ul>
+            <li><strong>多账号隔离与本地存储</strong>：支持同时添加并独立管理多个 Google 账号。每个账号的 OAuth 访问与刷新令牌加密保存于本机 iOS 钥匙串（Keychain）；对应的日历列表、日程与离线待同步队列按账号隔离保存于本机 App Group 沙盒中，供 App 与小组件展示及编辑。如开启网络连接并已登录账号，系统可能调度后台刷新（<code>BGAppRefreshTask</code>）以同步最新日程变更。</li>
+            <li><strong>最小必要权限范围（OAuth Scopes）</strong>：本应用<strong>不再支持也不访问 Google Tasks</strong>（未申请 <code>tasks</code> 权限），仅请求以下 5 项必要权限：
+              <ul>
+                <li><code>https://www.googleapis.com/auth/calendar.events</code>：读取、创建、编辑及删除您的 Google 日历日程（含重复规则、会议链接、RSVP 回复及日程附件链接）。</li>
+                <li><code>https://www.googleapis.com/auth/calendar.calendarlist</code>：读取您的日历列表，并同步日历名称与配色设置。</li>
+                <li><code>https://www.googleapis.com/auth/calendar.calendars</code>：仅在您主动操作时，创建、重命名或删除您名下的 Google 辅助日历。</li>
+                <li><code>https://www.googleapis.com/auth/calendar.acls</code>：仅在您打开“忙闲共享权限”时，读取或更新 Google 主日历的访问控制列表。</li>
+                <li><code>https://www.googleapis.com/auth/drive.file</code>：仅在您主动为 Google 日程添加本地附件时，在您的 Google 云端硬盘中创建或使用专属的 <code>Slim Calendar Attachments</code> 文件夹，将您选中的文件直传至云端并将链接关联至日程，随后清理本机临时副本；应用<strong>无权读取、列举或访问</strong>您 Google 云端硬盘中的其他任何文件。</li>
+              </ul>
+            </li>
+            <li><strong>忙碌占位与忙闲共享</strong>：您可按需开启“系统日历忙碌占位”功能；占位日程以私密（<code>private</code>）+ 忙碌（<code>opaque</code>）时间块写入 Google 主日历，标题默认为“忙碌”，不含原始日程详情或备注。忙闲共享仅写入您确认添加的联系人邮箱或主动开启的公开忙闲策略。</li>
+            <li><strong>符合 Google API 用户数据政策（含 Limited Use 限制使用要求）</strong>：Slim Calendar 对通过 Google API 获取的信息之使用与传输，严格遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>（包括 Limited Use 限制使用要求）：
+              <ul>
+                <li>所获取的数据仅用于在 Slim Calendar 应用及小组件中向您本人展示、创建、编辑与同步个人日程、日历配置及日程附件；</li>
+                <li>绝不出售您的数据，绝不用于广告投放或用户画像，也<strong>绝不用于开发、改进或训练通用人工智能/机器学习（AI/ML）模型</strong>；</li>
+                <li>因采用纯端侧直连架构，开发者及任何第三方人员均无法查阅、访问或留存您的 Google 数据。</li>
+              </ul>
+            </li>
+            <li><strong>随时断开与撤销</strong>：您可随时在「设置 → 日历账户 → Google 账号 → 断开连接并清除本地缓存」中撤销该账号的 OAuth 授权（调用 Google 官方 revoke 端点）并彻底清除本机钥匙串凭证、缓存与待同步队列；也可在「设置 → 通知与权限」关闭网络连接，或前往您的 Google 账号安全设置页面随时撤销应用权限。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>6. 数据存储期限与删除</h2>
+          <p>本应用不拥有外部数据服务器，因此不保留任何云端数据。在应用中删除日程或断开 Google 账号时，本机缓存会按您的操作立即更新或清理；卸载应用不会自动删除系统日历、提醒事项、Google 日历或 Google 云端硬盘 <code>Slim Calendar Attachments</code> 文件夹中的原始云端文件。如需删除云端数据，请在相应账户服务或系统日历、提醒事项中操作。</p>
+        </div>
+
+        <div class="section">
+          <h2>7. 儿童与未成年人隐私</h2>
+          <p>本应用专为大众用户设计，不针对儿童收集任何个人信息。应用不会自行收集儿童个人信息；如适用法律要求发生变化，我们会更新本政策和产品行为。</p>
+        </div>
+
+        <div class="section">
+          <h2>8. 隐私政策的更新</h2>
+          <p>如果随着功能迭代或法律合规要求，本政策发生修订，我们将在本页面发布最新版本，并在 App 内更新生效时间。建议您定期查阅以了解最新保护措施。</p>
+        </div>
+
+        <div class="section">
+          <h2>9. 联系方式</h2>
+          <p>如果您对本隐私政策有任何疑问、意见或反馈，欢迎通过电子邮件与开发者取得联系：</p>
+          <p><strong>联系邮箱：</strong><a href="mailto:onedolphindeveloper@gmail.com">onedolphindeveloper@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- ENGLISH CONTENT -->
+      <div class="content-en">
+        <div class="section">
+          <h2>1. Introduction & Privacy Philosophy</h2>
+          <p>Slim Calendar ("we", "us", or "our") is dedicated to protecting your privacy. This Privacy Policy explains our commitment to keeping your personal schedule secure. Our core product philosophy is simple: <strong>your calendar data belongs solely to you. We do not own, operate, or maintain any developer servers to collect, relay, or analyze your personal schedule information.</strong></p>
+        </div>
+
+        <div class="section">
+          <h2>2. Data Collection & Permission Usage <span class="pill-badge">Zero Server Collection</span></h2>
+          <p>Slim Calendar requests the following iOS system permissions exclusively to perform local on-device functionality:</p>
+          <ul>
+            <li><strong>Calendar Full Access (NSCalendarsFullAccessUsageDescription)</strong>: Used to read your existing events from Apple Calendar, display them in the month view and Home Screen widgets, and allow you to create, edit, or delete events upon your explicit action.</li>
+            <li><strong>Reminders Full Access (NSRemindersFullAccessUsageDescription)</strong>: Used to display your to-do items and update reminder status when you check off or create reminders.</li>
+            <li><strong>Notifications</strong>: With your permission, the app schedules local event and reminder notifications on your device. It does not use remote push notifications. You can change notification and sound preferences in Settings → Notifications & Permissions or revoke permission in iOS Settings.</li>
+            <li><strong>System Contact Picker (One-Tap Selection Only)</strong>: Only when you tap to pick a recipient email in Free/Busy Sharing, the app presents Apple's system <code>CNContactPickerViewController</code> so you can choose a single contact email. Slim Calendar does not request full Contacts access and never uploads or stores your address book.</li>
+          </ul>
+          <p>You can toggle off System Calendars, System Reminders, Notifications, or Network Access inside Settings → Calendar Accounts / Notifications & Permissions, or revoke permissions via iOS "Settings → Apps → Slim Calendar" at any time.</p>
+        </div>
+
+        <div class="section">
+          <h2>3. On-Device Storage, App Groups & iCloud KVS</h2>
+          <p>To enable interactive Home Screen widgets to display your selected date and daily agenda, the app uses standard iOS App Group storage. Shared files and per-account isolated Google caches remain strictly on-device and are never uploaded to any developer server. When signed into iCloud, the app may also use Apple's private iCloud Key-Value Store (<code>NSUbiquitousKeyValueStore</code>) to sync opaque event archive/completion keys (containing no event titles, locations, or notes) under Apple's iCloud terms.</p>
+        </div>
+
+        <div class="section">
+          <h2>4. Third-Party Services & Network Requests</h2>
+          <p>We firmly declare that:</p>
+          <ul>
+            <li>We do <strong>NOT</strong> embed any third-party advertisement SDKs.</li>
+            <li>We do <strong>NOT</strong> embed any analytics, crash reporting, or user profiling SDKs.</li>
+            <li>We do <strong>NOT</strong> sell or rent your personal schedule data or upload it to developer servers for analytics.</li>
+          </ul>
+          <ul>
+            <li><strong>Calendar Feed Previews</strong>: When you preview a subscription URL, the app connects over HTTPS using an ephemeral session (no persistent cookies or response cache). The URL provider receives your IP address and requested URL; local events and reminders are never included.</li>
+            <li><strong>Place Search & Contacts</strong>: When you search for a place, your query is processed by Apple MapKit without requesting device location permission. Participant contacts entered by you remain on-device and are only handed to Mail or Phone when you tap them.</li>
+            <li><strong>Holiday Data Updates</strong>: When Network Access is enabled, the app anonymously fetches public Chinese statutory holiday schedules from the open-source <code>NateScarlet/holiday-cn</code> repository (GitHub / jsDelivr) without sending any personal data.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5. Google Calendar & Google Drive API Direct Sync <span class="pill-badge">Direct Device-to-Google · Zero Relay</span></h2>
+          <p>If you choose to connect one or more Google accounts via "Settings → Calendar Accounts → Add Google Account", Slim Calendar authenticates using Apple's system <code>ASWebAuthenticationSession</code> (OAuth 2.0 with PKCE) and communicates directly between your device and official Google APIs (<code>accounts.google.com</code>, <code>oauth2.googleapis.com</code>, <code>www.googleapis.com</code>) with zero developer-operated backend or relay server:</p>
+          <ul>
+            <li><strong>Multi-Account Credentials & Isolated Cache</strong>: You can connect and manage multiple Google accounts independently. Each account's OAuth access and refresh tokens are stored locally in the iOS Keychain, and its calendars, events, and offline write queue are cached in an account-isolated directory inside the device's App Group container. When Network Access is enabled, iOS may schedule <code>BGAppRefreshTask</code> to keep your local schedule up to date.</li>
+            <li><strong>Requested OAuth Scopes (Minimal & Explicit)</strong>: Slim Calendar <strong>does not support or access Google Tasks</strong> (no <code>tasks</code> scope is requested) and requests only these 5 scopes:
+              <ul>
+                <li><code>https://www.googleapis.com/auth/calendar.events</code>: Read, create, edit, and delete your Google Calendar events (including recurrence, meeting links, RSVP status, and event attachment links).</li>
+                <li><code>https://www.googleapis.com/auth/calendar.calendarlist</code>: Read your calendar list and sync calendar names and color overrides.</li>
+                <li><code>https://www.googleapis.com/auth/calendar.calendars</code>: Create, rename, or delete user-owned secondary Google calendars only upon your explicit action.</li>
+                <li><code>https://www.googleapis.com/auth/calendar.acls</code>: Read and update primary calendar free/busy sharing rules only when you open Free/Busy Sharing.</li>
+                <li><code>https://www.googleapis.com/auth/drive.file</code>: Used solely when you explicitly attach a local file to a Google Calendar event. Slim Calendar creates/uses a dedicated <code>Slim Calendar Attachments</code> folder in your Google Drive, uploads only the file you selected directly from your device, attaches its Drive link to the event, and removes the temporary local copy. The app <strong>cannot read, list, or access</strong> any other files in your Google Drive.</li>
+              </ul>
+            </li>
+            <li><strong>Busy Mirror & Free/Busy Sharing</strong>: When explicitly enabled by you, Busy Mirror writes private (<code>private</code>), opaque (<code>opaque</code>) time blocks (default title "Busy") from selected non-Google calendars without copying original titles, locations, or notes. Free/busy ACL rules only apply to recipients or public settings you explicitly confirm.</li>
+            <li><strong>Google API Services User Data Policy (Limited Use)</strong>: Slim Calendar's use and transfer of information received from Google APIs strictly adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements:
+              <ul>
+                <li>Data accessed via Google APIs is used strictly to provide user-facing calendar, calendar-management, and event-attachment features inside Slim Calendar and its widgets;</li>
+                <li>Data is never sold, never used for advertising or profiling, and <strong>never used to develop, improve, or train generalized AI/ML models</strong>;</li>
+                <li>Because all communication is strictly device-to-Google, no developer or third party has human access to your Google data.</li>
+              </ul>
+            </li>
+            <li><strong>Revocation & Removal</strong>: You can tap "Disconnect & Clear Cache" for any connected Google account in Settings → Calendar Accounts to revoke its token via Google's official revoke endpoint and wipe its Keychain credentials, local cache, write queue, and sync settings. You can also turn off Network Access in Settings → Notifications & Permissions or revoke access anytime in your Google Account security settings.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>6. Data Retention & Deletion</h2>
+          <p>Because Slim Calendar operates without remote databases, we maintain no server-side copies of your data. Deleting an event or disconnecting a Google account updates or wipes its local cache on your device. Uninstalling the app does not delete original items in Apple Calendar, Reminders, Google Calendar, or files uploaded to your <code>Slim Calendar Attachments</code> folder in Google Drive. Manage or delete cloud items directly in Calendar, Reminders, or your account provider.</p>
+        </div>
+
+        <div class="section">
+          <h2>7. Children's Privacy</h2>
+          <p>Slim Calendar is designed for general audiences and does not knowingly collect personal identifiable information from children of any age. The app does not itself collect children’s personal information. We will update this policy and product behavior if applicable legal requirements change.</p>
+        </div>
+
+        <div class="section">
+          <h2>8. Changes to this Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+        </div>
+
+        <div class="section">
+          <h2>9. Contact Us</h2>
+          <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
+          <p><strong>Support Email:</strong> <a href="mailto:onedolphindeveloper@gmail.com">onedolphindeveloper@gmail.com</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Slim Calendar. All rights reserved.</p>
+      <p style="margin-top: 6px;">
+        <span class="content-zh">基于纯原生 Swift & SwiftUI 构建 · 绝无后台数据采集</span>
+        <span class="content-en">Built with Native Swift & SwiftUI · Zero Background Telemetry</span>
+      </p>
+    </footer>
+
+  </main>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('btn-zh').setAttribute('aria-pressed',String(lang !== 'en'));
+      document.getElementById('btn-en').setAttribute('aria-pressed',String(lang === 'en'));
+      const zhElements = document.querySelectorAll('.content-zh');
+      const enElements = document.querySelectorAll('.content-en');
+      const btnZh = document.getElementById('btn-zh');
+      const btnEn = document.getElementById('btn-en');
+
+      if (lang === 'en') {
+        zhElements.forEach(el => el.style.display = 'none');
+        enElements.forEach(el => el.style.display = 'block');
+        btnEn.classList.add('active');
+        btnZh.classList.remove('active');
+        document.documentElement.lang = 'en';
+      } else {
+        zhElements.forEach(el => el.style.display = 'block');
+        enElements.forEach(el => el.style.display = 'none');
+        btnZh.classList.add('active');
+        btnEn.classList.remove('active');
+        document.documentElement.lang = 'zh-CN';
+      }
+    }
+
+    // Auto-detect browser language
+    (function initLang() {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang && userLang.toLowerCase().startsWith('en')) {
+        setLang('en');
+      } else {
+        setLang('zh');
+      }
+    })();
+  </script>
+</body>
+</html>
