@@ -178,10 +178,6 @@ document.querySelectorAll('[data-theme]').forEach(button => {
   document.querySelector('.mac-showcase').classList.toggle('is-dark',dark);
  });
 });
-// A link to the install guide should reveal the instructions as well as scroll.
-document.querySelector('a[href="#mac-install"]').addEventListener('click',()=>{
- document.querySelector('#mac-install').open=true;
-});
 
 document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click',()=>setLanguage(button.dataset.lang)));
 let savedLanguage;
